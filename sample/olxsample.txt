@@ -1,0 +1,69 @@
+CHOOSE A CATEGORY
+
+
+Agriculture -
+Fertilizer -> organic, Normal 
+Properties
+Mobiles
+Jobs
+Bikes
+Electronics & Appliances
+Commercial Vehicles & Spares
+Furniture
+Fashion
+Books, Sports & Hobbies
+Pets
+Services
+
+
+
+SELECTED CATEGORY
+Properties
+/
+Lands & Plots
+
+Change
+INCLUDE SOME DETAILS
+Type *
+For Rent
+For Sale
+Listed by
+Builder
+Dealer
+Owner
+Plot Area *
+Length
+Breadth
+Facing
+
+Project Name
+0 / 70
+Ad title *
+Mention the key features of your item (e.g. brand, model, age, type)
+0 / 70
+Description *
+Include condition, features and reason for selling
+0 / 4096
+SET A PRICE
+Price*
+₹
+UPLOAD UP TO 20 PHOTOS
+
+Add Photo
+
+This field is mandatory
+
+CONFIRM YOUR LOCATION
+LIST
+CURRENT LOCATION
+State *
+
+This field is mandatory
+
+REVIEW YOUR DETAILS
+Name
+Jabert
+6 / 30
+Your phone number
+
++919842630047

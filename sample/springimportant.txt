@@ -1,0 +1,2 @@
+spring.datasource.initialization-mode=always -- for creating the table in spring 
+
