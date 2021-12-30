@@ -2,10 +2,12 @@ package com.jed.lemu.jpa;
 
 
 import com.jed.lemu.entity.Category;
+import com.jed.lemu.entity.Product;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
+import javax.swing.plaf.IconUIResource;
 import javax.swing.text.html.parser.Entity;
 import javax.transaction.Transactional;
 import java.util.List;
@@ -22,17 +24,38 @@ public class Repository {
     @PersistenceContext
     EntityManager entityManager;
 
-    /*public Category findById(int id){
-         return entityManager.find(Category.class,id);
+
+    public Product findByname(String name){
+        return entityManager.find(Product.class,name);
+    }
+
+    public Product save(Product product){
+
+        if(product.getName() == null){
+            entityManager.persist(product);
+        }
+        else {
+            entityManager.merge(product);
+        }
+        return product;
+    }
+
+    public Product insrt(Product product){
+        entityManager.persist(product);
+        return product;
+    }
+
+    public Product updte(Product product){
+        entityManager.merge(product);
+        return product;
+    }
+
+
+
+    /*public Product deleteByname(String name){
+
     }*/
 
-    public Category insert(Category category){
-        return entityManager.merge(category);
-    }
 
-    //Using JPQL
-    public List<Category> findAll(){
-        TypedQuery namedquery = entityManager.createNamedQuery("find_all_category",Category.class);
-        return namedquery.getResultList();
-    }
+
 }

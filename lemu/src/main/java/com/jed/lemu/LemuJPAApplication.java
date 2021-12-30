@@ -9,10 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
 @SpringBootApplication
-@EnableWebSecurity
 public class LemuJPAApplication implements CommandLineRunner {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
@@ -28,13 +26,7 @@ public class LemuJPAApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
         // TODO Auto-generated method stub
 
-
-        logger.info("Insert ", repository.insert(new Category("Agriculture")));
-        logger.info("Insert ", repository.insert(new Category("Fertilizer")));
-        logger.info("Insert ", repository.insert(new Category("Horiculture")));
-        logger.info("Insert ", repository.insert(new Category("Properties")));
-
-        logger.info("find all category -> {} ", repository.findAll());
+          //repository.findByname("cocunut");
 
     }
 

@@ -10,20 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RestController
-@RequestMapping("/rest/")
+
 public class CategoryController {
 
-    @Autowired
-    Repository repository;
 
-    @GetMapping("/category")
-    List<Category> getAllCategory(){
-       return repository.findAll();
-    }
-
-    @PostMapping("/addcategory")
-    Category addCategory(String category){
-        return repository.insert(new Category(category));
-    }
 }
